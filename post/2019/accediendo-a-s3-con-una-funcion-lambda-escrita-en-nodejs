@@ -1,5 +1,4 @@
-[metadata:author]:- "cjortegon"
-[metadata:tags]:- "amazon aws"
+<meta name="date" content="Jan 31, 2019" />
 
 # Accediendo a S3 con una función Lambda escrita en Node.js
 
