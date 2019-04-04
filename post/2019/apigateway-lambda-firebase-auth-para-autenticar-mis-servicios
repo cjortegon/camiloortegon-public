@@ -2,9 +2,6 @@
 
 # API Gateway + Lambda + Firebase Auth para autenticar mis servicios
 
-API Gateway + Lambda + Firebase Auth para autenticar mis servicios
-Camilo
-cjortegon
 En este tutorial vamos a aprender a hacer servicios autenticados en API Gateway. Para esto nos vamos a valer de una función Lambda, que operará como middleware conectándose con nuestro sistema de validación de Tokens preferido, yo en este caso voy a usar Firebase Auth, ya que es muy fácil de implementar.
 
 ### ¿Qué tecnologías usaremos?
