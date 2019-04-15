@@ -4,11 +4,11 @@
 
 # Mejorando nuestro código con flujos continuos y sin callbacks
 
-Recuerdo la primera vez que escribí un programa en el que combinaba todo lo aprendido en mi curso de algoritmos sobre clases, vistas, condicionales e hilos. Era un juego en 2D que simulaba un carrito al estílo de [Crazy Taxi](http://games144.com/game/36431n-crazy-taxi-facebook-game.php#play), un juego popular Facebook por esos días.
+Recuerdo la primera vez que escribí un programa en el que combinaba todo lo aprendido en mi curso de algoritmos sobre clases, vistas, condicionales e hilos. Era un juego en 2D que simulaba un carrito al estílo de [Crazy Taxi](http://games144.com/game/36431n-crazy-taxi-facebook-game.php#play), un juego popular en Facebook por esos días.
 
 ![40;;](https://github.com/cjortegon/camiloortegon-public/raw/master/post/2019/media/first-cart-game.png)
 
-Todo marchaba bien y me encantaba que preguntaran: ¿De verdad lo hiciste todo? Hasta que pasado mes y medio de haberlo escrito quise volver al código para ajustar un par de cosas. Sorprendido quedé al encontrar un código que siendo mio me costaba comprender. Había descubierto el problema que muchos desarrolladores antes de mi habían enfrentado, el temido código espaguetti.
+Todo marchaba bien y me encantaba que preguntaran: ¿De verdad lo hiciste todo? Hasta que pasado un mes y medio de haberlo escrito quise volver al código para ajustar un par de cosas. Sorprendido quedé al encontrar un código que siendo mio me costaba comprender. Había descubierto el problema que muchos desarrolladores antes de mi habían enfrentado, el temido código espaguetti.
 
 >   Pasamos más tiempo leyendo código que escribiendo, por eso vale la pena que sea fácil de leer.
 
