@@ -1,4 +1,4 @@
-<meta name="date" content="Apr 21, 2019" />
+<meta name="date" content="2019-4-21" />
 <meta name="image" content="https://github.com/cjortegon/camiloortegon-public/raw/master/seo/sign-up.png" />
 <meta name="language" content="es" />
 

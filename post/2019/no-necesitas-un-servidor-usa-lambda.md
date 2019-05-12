@@ -1,4 +1,4 @@
-<meta name="date" content="Apr 6, 2019" />
+<meta name="date" content="2019-4-6" />
 <meta name="image" content="https://github.com/cjortegon/camiloortegon-public/raw/master/seo/lambda_js.png" />
 <meta name="language" content="es" />
 

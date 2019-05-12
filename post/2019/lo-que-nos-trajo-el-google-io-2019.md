@@ -1,4 +1,4 @@
-<meta name="date" content="May 12, 2019" />
+<meta name="date" content="2019-5-12" />
 <meta name="image" content="https://raw.githubusercontent.com/cjortegon/camiloortegon-public/master/seo/google_io_2019.png" />
 <meta name="language" content="es" />
 

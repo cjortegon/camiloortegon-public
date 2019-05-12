@@ -1,4 +1,4 @@
-<meta name="date" content="Jan 24, 2019" />
+<meta name="date" content="2019-1-24" />
 <meta name="image" content="https://github.com/cjortegon/camiloortegon-public/raw/master/seo/aws_api.png" />
 <meta name="language" content="es" />
 

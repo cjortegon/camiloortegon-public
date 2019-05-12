@@ -1,4 +1,4 @@
-<meta name="date" content="Apr 14, 2019" />
+<meta name="date" content="2019-4-14" />
 <meta name="image" content="https://github.com/cjortegon/camiloortegon-public/raw/master/seo/redux-observable-flow.png" />
 <meta name="language" content="es" />
 
