@@ -1,6 +1,7 @@
 <meta name="date" content="2019-4-6" />
 <meta name="image" content="https://github.com/cjortegon/camiloortegon-public/raw/master/seo/lambda_js.png" />
 <meta name="language" content="es" />
+<meta name="tags" content="aws,lambda" />
 
 # No necesitas un servidor, usa AWS Lambda
 

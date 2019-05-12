@@ -1,6 +1,7 @@
 <meta name="date" content="2019-5-12" />
 <meta name="image" content="https://raw.githubusercontent.com/cjortegon/camiloortegon-public/master/seo/google_io_2019.png" />
 <meta name="language" content="es" />
+<meta name="tags" content="google,ai,ar,android,kotlin,tensorflow,machinelearning,mlkit" />
 
 # Lo que nos trajo el Google IO 2019
 
