@@ -7,7 +7,7 @@
 
 Siguiendo los pasos de [React Native](/blog/search?tag=react) y [Flutter](/blog/search?tag=flutter) en la creación de vistas, y más recientemente de [Jetpack Compose](https://developer.android.com/jetpack/compose), Apple deció unirse al club de la programación declarativa de interfaces. Esto pone tregua a la larga discusión que llevamos los desarrolladores para productos Apple sobre si es mejor usar el Storyboard o la creación de vistas programáticas.
 
-Resulta difícil decidir si el Storyboard es suficientemente mantenible o si la creación de vistas a partir de código es realmente escalable. Con SwiftUI tenemos certeza de algo y es que ambos bandos tendrémos un espacio común para que crear vistas, ya que el nuevo Xcode 11 permite tener de un lado el código, mientras en vivo se compila al lado opuesto la pantalla, permitiendo también editarlo como en un storyboard que luego se traduce a código. Esto no sería innovador si existieran 2 ingredientes fundamentales en la receta SwfitUI: Programación declarativa y Hot reload.
+Resulta difícil decidir si el Storyboard es suficientemente mantenible o si la creación de vistas a partir de código es realmente escalable. Con SwiftUI tenemos certeza de algo y es que ambos bandos tendrémos un espacio común para que crear vistas, ya que el nuevo Xcode 11 permite tener de un lado el código, mientras en vivo se compila al lado opuesto la pantalla, permitiendo también editarlo como en un storyboard que luego se traduce a código. Esto no sería innovador si no existieran 2 ingredientes fundamentales en la receta SwiftUI: Programación declarativa y Hot reload.
 
 ![;;](https://github.com/cjortegon/camiloortegon-public/raw/master/post/2019/media/swiftui-presentation-wwdc19.png)
 
