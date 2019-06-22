@@ -1,7 +1,7 @@
 <meta name="date" content="2019-6-16" />
 <meta name="image" content="https://github.com/cjortegon/camiloortegon-public/raw/master/seo/swift_ui_presentation.png" />
 <meta name="language" content="es" />
-<meta name="tags" content="apple,swiftui,apps,react,redux,snapkit,rxcocoa" />
+<meta name="tags" content="apple,swiftui,apps,react,redux,snapkit,rxcocoa,ios" />
 
 # SwiftUI: Apple entra por fin a la era de UI modernas
 
