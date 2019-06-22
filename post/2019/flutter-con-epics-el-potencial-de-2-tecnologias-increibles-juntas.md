@@ -1,8 +1,9 @@
-<meta name="date" content="2019-6-23" />
+<meta name="date" content="2019-6-22" />
+<meta name="image" content="https://github.com/cjortegon/camiloortegon-public/raw/master/seo/flutter_redux_observable.png" />
 <meta name="language" content="es" />
-<meta name="tags" content="flutter,redux-observable,redux" />
+<meta name="tags" content="flutter,redux-observable,redux,android,ios" />
 
-# Flutter con Epics, el potencial de 2 tecnologías increíbles juntas
+# Flutter con Epics, uniendo la flexiblidad con el orden
 
 Flutter, uno de los frameworks más emocionantes con los que he trabajado este año, me sorprende cada día por lo efectivo que resulta para crear Apps con un alto desempeño y que con poco tiempo ya está haciendo un frente importante a tecnologías multiplataforma como ReactNative y Ionic.
 
