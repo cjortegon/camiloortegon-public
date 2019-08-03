@@ -1,0 +1,4 @@
+pingEpic = action$ => action$.pipe(
+  filter(action => action.type === 'PING'),
+  mapTo({ type: 'PONG' })
+)
