@@ -1,0 +1,18 @@
+   checkoutEpic = action$ => action$.pipe(
+       filter(action => action.type === 'startCheckoutFlow'),
+       flatMap({
+           if( !user.isLogged() ) {
+               Store.dispatch(AuthAction.showLoginRegisterFlow(
+                   dispatchOnSuccess: CheckoutAction.startCheckoutFlow,
+                   dispatchOnError: AlertAction.showMessage("...")
+               ))
+           } else if( !user.hasAddress() ) {
+               Store.dispatch(AddressAction.createAddressFlow(
+                   dispatchOnSuccess: CheckoutAction.startCheckoutFlow,
+                   dispatchOnError: AlertAction.showMessage("...")
+               ))
+           } else {
+               startCheckout()
+           }
+       })
+   )
