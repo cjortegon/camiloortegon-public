@@ -1,0 +1,10 @@
+   checkoutEpic = action$ => action$.pipe(
+       filter(action => action.type === 'Checkout'),
+       flatMap({
+           if( user.isLogged() ) {
+               startCheckout()
+           } else {
+               Store.dispatch(AuthAction.showLoginRegisterFlow)
+           }
+       })
+   )

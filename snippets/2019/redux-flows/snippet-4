@@ -1,0 +1,16 @@
+   CheckSesionAndStartAuthOperation()
+   .execute( status => {
+       if status == .ok {
+           CheckAddressAndStartAddressOperation()
+           .execute( status => {
+               if status == .ok {
+                   CheckoutOperation()
+                   .execute()
+               } else if status != .dismiss {
+                   showAddressError()
+               }
+           })
+       } else if status != .dismiss {
+           showAuthenticationError()
+       }
+   }
