@@ -1,7 +1,7 @@
 <meta name="date" content="2019-1-24" />
 <meta name="image" content="https://github.com/cjortegon/camiloortegon-public/raw/master/seo/aws_api.png" />
 <meta name="language" content="es" />
-<meta name="tags" content="aws,apigateway,lambda,firebase,security,tutorial" />
+<meta name="tags" content="aws,apigateway,lambda,firebase,security" />
 
 # API Gateway + Lambda + Firebase Auth para autenticar mis servicios
 
