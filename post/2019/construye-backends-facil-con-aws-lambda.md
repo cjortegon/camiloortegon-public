@@ -5,17 +5,17 @@
 
 # Construye backends fácil con AWS Lambda
 
-Hace un tiempo que conocí AWS Lambda, entendí que los servicios en la nube, al igual que otras cosas que compramos con tanta naturalidad, evolucionarían hasta convertirse en algo tan genérico como ir de compras. Bastaría con seleccionar una marca, una presentación (botella, caja, etc), y abriríamos el grifo para empezar a usarlo. Nadie se pregunta si saldría más barato tener un aljibe o si vale la pena producir tu propia tela, simplemente vas y la compras, y te cobran por lo que consumes, así es Lambda.
+Hace un tiempo que conocí AWS Lambda, entendí que los servicios en la nube, al igual que otras cosas que compramos con tanta naturalidad, evolucionarían hasta convertirse en algo tan genérico como ir de compras. Bastaría con seleccionar una marca, una presentación (botella, caja, etc), o simplemente abrir el grifo para empezar a usarlos. Nadie del común se pregunta si saldría más barato tener un aljibe o si vale la pena producir tu propia tela, simplemente vas y la compras, y te cobran por lo que consumes, así es Lambda.
 
 ![;250;](https://github.com/cjortegon/camiloortegon-public/raw/master/post/2019/media/cloud-plants.jpg)
 
-Pensar en términos de funciones cambia la forma en la que entendemos nuestro backend, porque algunas veces seguimos imaginando que estamos pagando por una caja física a la que toca además instalarle una larga lista de software antes de poder imprimir ese "Hola mundo". Pensar en funciones es la forma natural en la que abres inicias una llamada por tu móvil y no te preguntas por cómo pasó la señal de tu boca al oído de tu interlocutor.
+Pensar en términos de funciones cambia la forma en la que entendemos nuestro backend, porque algunas veces seguimos imaginando que estamos pagando por una caja metálica a la que toca además instalarle una larga lista de software antes de poder imprimir ese "Hola mundo". Pensar en funciones es la forma natural en la que abres inicias una llamada por tu móvil y no te preguntas cómo pasó la señal de tu boca al oído de tu interlocutor.
 
 Lambda trabaja bajo la forma más granular en la que puedes extraer la lógica de tu negocio. No importa si eres desarrollador móvil o frontend, con Lambda ya no hay excusa para depender de backends tipo SaaS rígidos como Firebase que no te permitan mucha flexibilidad para hacer productos súper inter-conectados. Con Lambda debes aprender solo un lenguaje de back como Java, NodeJS o Python y escribir las funciones sin preocuparse de cosas extras como la escalabilidad o seguridad de tu máquina, porque al final, no tienes una máquina, así como no tienes una antena de celular propia para comunicarte.
 
 Ahora si, a lo que vinimos, al código, en este punto asumo que ya tienes una cuenta de AWS creada.
 
-Lo primero es crear una nueva función Lambda, escogiendo uno de los 6 lenguajes soportados actualmente (C#, Go, Java, Node, Python y Ruby). En los permisos Amazon usa IAM para definir a cuales recursos se desea acceder, así podemos por ejemplo dar acceso a un bucket de S3 o a enviar correos por Amazon SES.
+Lo primero es crear una nueva función Lambda, escogiendo uno de los 6 lenguajes soportados actualmente (C#, Go, Java, Node, Python y Ruby). En los permisos Amazon usa IAM para definir los recursos a los que se desea acceder, así podemos por ejemplo dar acceso a un bucket de S3 o a enviar correos por Amazon SES.
 
 Yo trabajaré con NodeJS. Una vez creada la función, dispondremos de un ejemplo con la siguiente estructura:
 
@@ -27,7 +27,7 @@ Yo trabajaré con NodeJS. Una vez creada la función, dispondremos de un ejemplo
         }
     }
 
-Aunque si es de nuestra preferencia, también podremos trabajar con una estructura así:
+Aunque si es de nuestra preferencia, también podremos trabajar con una estructura del estilo:
 
 >   
     exports.handler = (event, context, callback) => {
@@ -45,7 +45,7 @@ En ese último estamos simulando que hacemos una petición a la base de datos qu
 
 En la sección de **Basic settings** encontraremos 2 campos parametrizados: Memoria asignada y Timeout. El máximo tiempo que puede una función ejecutarse es de 59 segundos. Y la máxima memoria que podemos asignar a una función es 3008Mb, sin embargo la capacidad de computo aumenta a la misma velocidad a la que se asigna memoria. El precio facturado se calcula en base de los recursos (memoria) asignados y al tiempo de ejecución, cada 100ms o fracción. Para mayor información consultar los [precios actualizados aquí](https://aws.amazon.com/lambda/pricing/). Sin embargo Lambda ofrece un FreeTier (el primer año de uso) de hasta 400.000 segundos de ejecución, una cantidad suficiente para casi cualquier emprendimiento.
 
-Antes de llevar nuestra función a producción, podemos hacer una pruebas desde la misma consola para verificar que el timeout y recursos asignados son suficientes.
+Antes de llevar nuestra función a producción, podemos hacer pruebas desde la misma consola para verificar que el timeout y recursos asignados son suficientes.
 
 ![;250;l](https://github.com/cjortegon/camiloortegon-public/raw/master/post/2019/media/lambda-test-console.png)
 
@@ -86,7 +86,7 @@ Para conocer más acerca de los roles de las funciones Lambda, y para entender l
 
 ### Accediento mediante ApiGateway
 
-ApiGateway funciona como una puerta exponer nuestras funciones Lambda mediante servicios REST. Servicios que además [podemos autenticar siguiendo este tutorial](/blog/2019/apigateway-lambda-firebase-auth-para-autenticar-mis-servicios).
+ApiGateway funciona como una puerta para exponer nuestras funciones Lambda mediante servicios REST. Servicios que además [podemos autenticar siguiendo este tutorial](/blog/2019/apigateway-lambda-firebase-auth-para-autenticar-mis-servicios).
 
 Para esto es necesario ir a ApiGateway y crear un nuevo API. Aquí podremos crear nuestras propias rutas (i.e. /blog/search). Y luego creamos nuestros métodos (GET, POST, etc..). Luego asociamos el método a una función específica:
 
@@ -122,12 +122,7 @@ Si queremos convertir el body recibido en un método tipo POST, hacemos lo sigui
 
 Si adicionalmente queremos mapear los headers que nos provee ApiGateway, podemos hacerlo de la siguiente forma:
 
->   
-    "headers": {
-    .   #foreach($param in $input.params().header.keySet())
-        "$param": "$util.escapeJavaScript($input.params().header.get($param))" #if($foreach.hasNext), #end
-    .   #end
-    }
+>gist:https://raw.githubusercontent.com/cjortegon/camiloortegon-public/master/snippets/2019/construye-backends-facil-con-aws-lambda/snippet-7
 
 Para entender mejor todas las posibilidades que tiene ApiGateway, hice un tutorial ([Aprendiendo a conectar ApiGateway con funciones Lambda](/blog/2019/aprendiendo-a-conectar-apigateway-con-lambda)) al respecto donde explico cada uno de los pasos con mayor detalle.
 
