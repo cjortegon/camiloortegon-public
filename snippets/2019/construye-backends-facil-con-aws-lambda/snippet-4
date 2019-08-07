@@ -1,0 +1,3 @@
+const lambda = new AWS.Lambda({
+    signatureVersion: 'v4'
+})

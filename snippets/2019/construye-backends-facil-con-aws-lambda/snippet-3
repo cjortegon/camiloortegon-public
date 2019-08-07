@@ -1,0 +1,20 @@
+var AWS = require('aws-sdk')
+AWS.config.region = 'us-east-1'
+AWS.config.update({
+    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
+})
+
+var lambda = new AWS.Lambda()
+var params = {
+    FunctionName: 'myLambdaFunction', /* required */
+    Payload: JSON.stringify({
+        key1: "value1",
+        key2: "value2",
+        key3: "value3",
+    })
+}
+lambda.invoke(params, function(err, data) {
+    if (err) console.log(err, err.stack)
+    else     console.log(data)
+})
