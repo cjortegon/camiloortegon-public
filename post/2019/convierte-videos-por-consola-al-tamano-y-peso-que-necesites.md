@@ -1,4 +1,7 @@
-<meta name="date" content="Sep 12, 2019" />
+<meta name="date" content="2019-9-12" />
+<meta name="image" content="https://github.com/cjortegon/camiloortegon-public/raw/master/seo/ffmpeg.png" />
+<meta name="language" content="es" />
+<meta name="tags" content="video,ffmpeg" />
 
 # Convierte videos por consola al tamaño y peso que necesites
 
