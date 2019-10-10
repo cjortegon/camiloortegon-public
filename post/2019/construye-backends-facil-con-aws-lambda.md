@@ -1,4 +1,4 @@
-<meta name="date" content="Aug 7, 2019" />
+<meta name="date" content="2019-8-7" />
 <meta name="image" content="https://github.com/cjortegon/camiloortegon-public/raw/master/seo/power-of-lambda.png" />
 <meta name="language" content="es" />
 <meta name="tags" content="lambda,apigateway,aws" />
