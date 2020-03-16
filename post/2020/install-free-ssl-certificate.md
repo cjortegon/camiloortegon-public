@@ -1,5 +1,5 @@
 <meta name="date" content="2020-3-16" />
-<meta name="image" content="https://github.com/cjortegon/camiloortegon-public/raw/master/seo/lambda_js.png" />
+<meta name="image" content="https://github.com/cjortegon/camiloortegon-public/raw/master/seo/lightsail_default.png" />
 <meta name="language" content="en" />
 <meta name="tags" content="lightsail,ec2,aws,ssl" />
 
