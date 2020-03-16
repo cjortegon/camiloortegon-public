@@ -101,3 +101,16 @@ I will describe the steps to deploy an application run with NodeJS, but the set-
 3. In the platform where you purchased your domain name, remember to copy the nameservers to make your domain is managed by the Lightsail DNS.
 
 You are all set to consume your application using `http`. To install an SSL certificate and redirect your traffic to `https`, read this [tutorial](/blog/2020/install-free-ssl-certificate).
+
+### Run your application using NodeJS
+
+An additional step if you are running on NodeJS is that you need a daemon to run your application. I recommend to use [forever](https://www.npmjs.com/package/forever), which you can download from `npm`:
+
+>   
+    $ sudo npm i -g forever
+
+And to start or stop your application just run:
+
+>   
+    $ forever start index.js
+    $ forever stop index.js
