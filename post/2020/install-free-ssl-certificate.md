@@ -68,9 +68,9 @@ One of the tools I recommend the most if you don't have time to learn much about
 7. Remove the old certificates and rename the new ones:
 
 >   
-    $ rm server.cert
+    $ rm server.crt
     $ rm server.key
-    $ mv cert.pem server.cert
+    $ mv cert.pem server.crt
     $ mv privkey.pem server.key
 
 8. Now is time to configure the certificate at Lightsail machine. Redirect trafic from 80 port (http) to 443 (https). To achieve this modify this file: "`/opt/bitnami/apache2/conf/bitnami/bitnami.conf`".
