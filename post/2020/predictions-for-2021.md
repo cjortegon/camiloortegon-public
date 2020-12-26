@@ -1,5 +1,5 @@
 <meta name="date" content="2020-12-26" />
-<meta name="image" content="https://github.com/cjortegon/camiloortegon-public/raw/master/seo/lightsail_default.png" />
+<meta name="image" content="https://github.com/cjortegon/camiloortegon-public/raw/master/seo/mobile-tech-predictions.jpg" />
 <meta name="language" content="en" />
 <meta name="tags" content="pwa,flutter,saas,react,mobile,apple" />
 
