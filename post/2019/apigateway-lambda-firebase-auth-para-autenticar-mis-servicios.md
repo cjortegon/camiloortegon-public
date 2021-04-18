@@ -38,7 +38,7 @@ Asigna un nombre para el service account, no hace falta poner nada en los pasos 
 
 ![;;](https://github.com/cjortegon/camiloortegon-public/raw/master/post/2019/media/create-new-service-account-firebase.png)
 
-Y finalmente abre el service account que acabas de crear para descargar el Json.
+Y finalmente abre el service account que creaste para descargar el Json que usaremos en la autenticación desde Nodejs.
 
 ![;;](https://github.com/cjortegon/camiloortegon-public/raw/master/post/2019/media/download-json-service-account-firebase.png)
 
