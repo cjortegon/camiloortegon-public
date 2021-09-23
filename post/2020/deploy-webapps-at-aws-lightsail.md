@@ -42,7 +42,6 @@ I will describe the steps to deploy an application run with NodeJS, but the set-
 
 >   
     $ cd stack
-    $ sudo ./use_nodejs
 
 10. Create an apps folder and clone your repository, you can have as many apps as you want in the same server and redirect using the /my-app-1 subfolder level.
 
@@ -68,20 +67,21 @@ I will describe the steps to deploy an application run with NodeJS, but the set-
     - For those applications that are hosted inside a subfolder, there will be added 2 rules for each descriptor. i.e. `/api` and `/api/`.
     - 
 
-12. Edit the file "`/opt/bitnami/apache2/conf/bitnami/bitnami-apps-prefix.conf`" to add this line:
+12. Edit the file "`/opt/bitnami/apache/conf/httpd.conf`" and scroll to the bottom of the file, and replace `IncludeOptional "/opt/bitnami/apache/conf/vhosts/*.conf"`:
 
 >   
-    Include "/opt/bitnami/apps/conf/httpd-prefix.conf"
+    Include "/opt/bitnami/apps/conf/*.conf"
 
-13. Create your environment variables (if needed):
+13. Create your environment variables (if needed) in this file. Do not remove anything else, this file is important for the correct use of Apache Application Server.
+
+Place your variables after `# Custom environment variables may be defined below`
+>   
+    $ sudo nano /opt/bitnami/scripts/apache-env.sh
+
+For Old Bitnami servers edit this file, and write the variables before `exec /opt/bitnami/nodejs/bin/.node.bin  "$@"`:
 
 >   
     $ sudo nano /opt/bitnami/nodejs/bin/node
-
-- Make sure to put all the environment variables before this line:
-
->   
-    exec /opt/bitnami/nodejs/bin/.node.bin  "$@"
 
 14. And finally restart the apache server:
 

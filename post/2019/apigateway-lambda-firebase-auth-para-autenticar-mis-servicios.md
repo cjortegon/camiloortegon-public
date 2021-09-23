@@ -30,7 +30,7 @@ En este tutorial vamos a aprender a hacer servicios autenticados en API Gateway.
         databaseURL: 'https://******.firebaseio.com'
     })
 
-El archivo **firebase.json** es un _Service Account Key_ que se puede descargar desde [console.cloud.google.com](console.cloud.google.com). Asegurate de tener seleccionado el proyecto correcto.
+El archivo **firebase.json** es un _Service Account Key_ que se puede descargar desde [console.cloud.google.com](https://console.cloud.google.com/). Asegurate de tener seleccionado el proyecto correcto.
 
 ![;;](https://static.platzi.com/media/user_upload/create-service-account-key-9b3a017b-8b4b-4da8-be7a-49fc8ea7d6ce.jpg)
 

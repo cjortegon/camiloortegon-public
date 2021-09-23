@@ -5,7 +5,7 @@
 
 # Mobile Tech Predictions for 2021
 
-Let's do the most difficult job because we as humans are bad at predicting the future. We can trace the trajectory of comets and planets, but changes driven by human wills (politics) or unpredicted things like a worldwide Pandemia come without knowing. Today I will try to do my best guess about changes on mobile technologies for 2021. I also recently wrote a [post](/what-an-app-needs-before-going-to-market) about what an app needs before going to market.
+Let's make some predictions. We can trace the trajectory of comets and planets, but changes driven by human wills (politics) or unpredicted things like a worldwide Pandemia come without knowing. Today I will try to do my best guess about changes on mobile technologies for 2021. I also recently wrote a [post](/blog/2020/what-an-app-needs-before-going-to-market) about what an app needs before going to market.
 
 ![70;;](https://github.com/cjortegon/camiloortegon-public/raw/master/post/2020/media/pwa_vs_native.jpg)
 

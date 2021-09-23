@@ -22,7 +22,7 @@ La herramienta que les quiero presentar hoy se llama [FFmpeg](https://ffmpeg.org
 Una alternativa es seguir los pasos que se describen en la página (para Linux, Windows y Mac). Sin embargo, me gustaría aquí dar una ayuda a los usuarios de Mac con el comando más completo que encontré para descargar la base juento con todos los formatos de compresión. Para ejecutarlo requerimos tener [Homebrew](https://brew.sh/) instalado:
 
 >   
-brew install ffmpeg --with-fdk-aac --with-ffplay --with-freetype --with-frei0r --with-libass --with-libvo-aacenc --with-libvorbis --with-libvpx --with-opencore-amr --with-openjpeg --with-opus --with-rtmpdump --with-schroedinger --with-speex --with-theora --with-tools
+brew install ffmpeg
 
 ### Ejemplos de uso básico
 
