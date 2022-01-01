@@ -29,6 +29,6 @@ Para quienes les apasiona el emprendimiento, este es un gran libro para empezar 
 
 ### 5. Cómo ser un imán para las personas
 
-Este es un libro para todos, ya que son una serie de consejos que debemos aplicar para tener mejores relaciones con los demás. Entre estos están que no existe una 2da primera impresión, que el entusiasmo es contagioso y nos vuelve más atractivos, que criticar crea una mala imagen de nosotros mismos y que contarle nuestros problemas a todos no aporta nada, ya que al 20% no le importará y al otro 80% incluso se alegrará.
+Este es un libro para todos, **Marc Reklau** nos da consejos para tener mejores relaciones con los demás. Entre estos están que no existe una 2da primera impresión, que el entusiasmo es contagioso y nos vuelve más atractivos, que criticar crea una mala imagen de nosotros mismos y que contarle nuestros problemas a otros no aporta nada, ya que al 20% no le importará y al otro 80% incluso se alegrará.
 
-Feliz 2022 para todos, espero que esta lista les sea de utilidad para escoger sus libros y empezar un nuevo año de mucho crecimiento y metas ambiciosas.
+Feliz 2022 para todos, espero que esta lista les sea útil para escoger sus libros y empezar un nuevo año de mucho crecimiento y metas ambiciosas.
