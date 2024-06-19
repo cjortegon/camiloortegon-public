@@ -57,7 +57,7 @@ One of the tools I recommend the most if you don't have time to learn much about
     again. To non-interactively renew *all* of your certificates, run
     "certbot renew"
 
-- The final location where the certificate and private key were saved is "`/etc/letsencrypt/live/velavida.co`".
+- The final location where the certificate and private key were saved is "`/etc/letsencrypt/live/example.com`".
 
 6. Copy all the files from that folder into the following location:
 
