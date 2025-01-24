@@ -2,6 +2,7 @@
 <meta name="image" content="https://github.com/cjortegon/camiloortegon-public/raw/master/seo/reading.jpg" />
 <meta name="language" content="es" />
 <meta name="tags" content="books" />
+<meta name="topic" content="Libros" />
 
 # Mis 5 libros recomendados para el 2022
 
